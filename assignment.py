@@ -22,3 +22,5 @@ actors.append(pwdrs)
 for actor in actors:
     use_names = ", ".join(use.name for use in actor.uses)
     print(f"Actor: {actor.name} with use cases: {use_names}")
+
+print("The diagram contains the use cases to report, assign work order data, create a damage file, and update progress. The first three can be done by citizens by initiating the report, and the last can be used internally by the Public Works Department Repair System")
