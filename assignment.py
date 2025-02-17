@@ -20,4 +20,5 @@ pwdrs = Actor("Public Works Department Repair System", [update])
 actors.append(pwdrs)
 
 for actor in actors:
-    print(f"Actor: {actor.name} with use cases: {actor.uses}")
+    use_names = ", ".join(use.name for use in actor.uses)
+    print(f"Actor: {actor.name} with use cases: {use_names}")
